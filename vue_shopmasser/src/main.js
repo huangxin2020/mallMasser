@@ -12,6 +12,14 @@ import axios from 'axios'
 // 在Vue的实例上绑定axios 这样每一个页面都可以 利用$http 这个方法来发送请求了
 // 对axios进行一些配置 根路径的配置
 axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1'
+// 通过axios请求拦截器添加Token，保证拥有获取数据的权限
+axios.interceptors.request.use(config => {
+  // console.log(config)
+  // 为请求头对象，添加Token验证的 Authorization 字段
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  // 在最后必须 return config
+  return config
+})
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
