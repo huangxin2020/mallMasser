@@ -1,5 +1,9 @@
 # vue_shopmasser
 
+前端使用： Vue全家桶 + element ui 结合项目 前后端分离
+
+后端使用： phpstudy + node 搭建服务
+
 ## Project setup
 ```
 npm install
