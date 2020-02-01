@@ -133,6 +133,6 @@ export default {
 
  .btns {
     display: flex;
-    // justify-content: flex-end;
+    justify-content: flex-end;
  }
 </style>

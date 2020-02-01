@@ -4,7 +4,8 @@ import Vue from 'vue'
 import { 
     Button ,Form ,FormItem ,Input ,Message ,Container ,Header ,Aside ,Main 
     ,Menu ,Submenu ,MenuItem ,Breadcrumb ,BreadcrumbItem ,Card ,Row ,Col ,Table
-    ,TableColumn ,Switch ,Pagination ,Dialog ,Tooltip
+    ,TableColumn ,Switch ,Pagination ,Dialog ,Tooltip ,MessageBox ,Tag ,Tree ,Select ,Option
+    ,Cascader ,Alert ,Tabs ,TabPane
 } from 'element-ui'
 
 Vue.use(Button)
@@ -29,6 +30,16 @@ Vue.use(Switch)
 Vue.use(Pagination)
 Vue.use(Dialog)
 Vue.use(Tooltip)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
+
 
 // 挂载到vue的原型上
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
