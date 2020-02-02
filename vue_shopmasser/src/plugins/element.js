@@ -5,7 +5,8 @@ import {
     Button ,Form ,FormItem ,Input ,Message ,Container ,Header ,Aside ,Main 
     ,Menu ,Submenu ,MenuItem ,Breadcrumb ,BreadcrumbItem ,Card ,Row ,Col ,Table
     ,TableColumn ,Switch ,Pagination ,Dialog ,Tooltip ,MessageBox ,Tag ,Tree ,Select ,Option
-    ,Cascader ,Alert ,Tabs ,TabPane
+    ,Cascader ,Alert ,Tabs ,TabPane ,Steps ,Upload ,Step ,CheckboxGroup ,Checkbox ,Timeline
+    ,TimelineItem
 } from 'element-ui'
 
 Vue.use(Button)
@@ -38,6 +39,13 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Upload)
+Vue.use(Step)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 
 // 挂载到vue的原型上
