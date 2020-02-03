@@ -11,7 +11,8 @@ export default {
   },
   methods : {  
   },
-  activated () {
+  created(){
+    console.log(111);
   }
 }
 </script>
